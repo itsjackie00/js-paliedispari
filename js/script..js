@@ -37,6 +37,9 @@ Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Dichiariamo chi ha vinto.
 */
 
-let userChoise = prompt('Scegli pari o dispari');
+let userChoice = prompt('Scegli pari o dispari');
 console.log(userChoise);
+
+let userChoiceN = (parseInt(prompt('Scegli un numero da 1 a 5')));
+console.log(userChoiceN);
 
