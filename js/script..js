@@ -14,3 +14,16 @@ Dichiariamo chi ha vinto.
 
 let userWord = prompt('Inserisci una parola');
 console.log(userWord);
+
+const parolaInversa = invertiParola(userWord);
+
+if(userWord === parolaInversa){
+    console.log('la parola è palindroma');
+  } else {
+    console.log('la parola non è palindroma');
+  }
+  
+function invertiParola(str){
+  const strInversa = str.toLowerCase().split('').reverse().join('');  
+  return strInversa;
+}
