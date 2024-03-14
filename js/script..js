@@ -12,21 +12,21 @@ Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Dichiariamo chi ha vinto.
 */
 
-let userWord = prompt('Inserisci una parola');
-console.log(userWord);
+// let userWord = prompt('Inserisci una parola');
+// console.log(userWord);
 
-const parolaInversa = invertiParola(userWord);
+// const parolaInversa = invertiParola(userWord);
 
-if(userWord === parolaInversa){
-    console.log('la parola è palindroma');
-  } else {
-    console.log('la parola non è palindroma');
-  }
-  
-function invertiParola(str){
-  const strInversa = str.toLowerCase().split('').reverse().join('');  
-  return strInversa;
-}
+// if (userWord === parolaInversa) {
+//     console.log('la parola è palindroma');
+// } else {
+//     console.log('la parola non è palindroma');
+// }
+
+// function invertiParola(str) {
+//     const strInversa = str.toLowerCase().split('').reverse().join('');
+//     return strInversa;
+// }
 
 
 /*
@@ -37,9 +37,23 @@ Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Dichiariamo chi ha vinto.
 */
 
-let userChoice = prompt('Scegli pari o dispari');
-console.log(userChoise);
+// let userChoice = prompt('Scegli pari o dispari');
+// console.log(userChoice);
 
-let userChoiceN = (parseInt(prompt('Scegli un numero da 1 a 5')));
-console.log(userChoiceN);
+
+// getRndInteger(1,5);
+
+function isEven(number){
+    return number % 2 === 0;
+}
+
+// Funzione per scegliere pari o dispari
+function giocaPariODispari(choice, userChoiceN) {
+    if (userChoiceN < 1 || userChoiceN > 5) {
+        return 'Inserisci un numero compreso tra 1 e 5.';
+    }
+    
+}
+let computerN =  getRndInteger(1,5);
+
 
