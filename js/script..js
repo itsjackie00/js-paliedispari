@@ -54,6 +54,14 @@ function giocaPariODispari(choice, userChoiceN) {
     }
     
 }
+
+// Genera un numero random per il computer
 let computerN =  getRndInteger(1,5);
+
+// Calcolo la somma tra user e computer
+let sum = userChoiceN + computerN;
+
+// Controllo se la somma è pari o dispari
+let result = isEven(sum) ? 'pari' : 'dispari';
 
 
