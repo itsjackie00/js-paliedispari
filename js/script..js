@@ -37,31 +37,29 @@ Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Dichiariamo chi ha vinto.
 */
 
-// let userChoice = prompt('Scegli pari o dispari');
-// console.log(userChoice);
+let userChoice = prompt('Scegli pari o dispari');
+console.log(userChoice);
 
 
 // getRndInteger(1,5);
 
-function isEven(number){
-    return number % 2 === 0;
+function pariODispari(number) {
+    return number % 2 === 0 ? 'pari' : 'dispari';
+    console.log(number);
 }
 
-// Funzione per scegliere pari o dispari
-function giocaPariODispari(choice, userChoiceN) {
-    if (userChoiceN < 1 || userChoiceN > 5) {
-        return 'Inserisci un numero compreso tra 1 e 5.';
-    }
-    
-}
-
-// Genera un numero random per il computer
-let computerN =  getRndInteger(1,5);
+// Funzione per il gioco
+function giocaPariODispari(userChoiceN, userChoiceN) {
+   let computerN = getRndInteger(1,5);
 
 // Calcolo la somma tra user e computer
 let sum = userChoiceN + computerN;
+console.log(sum);
 
 // Controllo se la somma è pari o dispari
-let result = isEven(sum) ? 'pari' : 'dispari';
+let result = pariODispari(sum);
+console.log(result);
 
+// Determino il vincitore
 
+}
